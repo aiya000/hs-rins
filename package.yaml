@@ -1,0 +1,26 @@
+name: rins
+version: 0.0.1
+synopsis: Nya~~
+description: Rin-ga-be
+maintainer: aiya000 <aiya000.develop@gmail.com>
+license: MIT
+github: aiya000/hs-rins
+category: Lens
+
+ghc-options: -Wall -Wno-name-shadowing -Wno-unused-do-bind -Wno-type-defaults -Wno-orphans -fprint-potential-instances
+dependencies:
+  - base >= 4.7 && < 5
+
+library:
+  source-dirs: src
+
+tests:
+  spec:
+    main: Tasty.hs
+    source-dirs:
+      - test
+      - src
+    dependencies:
+      - tasty
+      - tasty-discover
+      - tasty-hunit
